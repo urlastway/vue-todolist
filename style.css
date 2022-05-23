@@ -77,23 +77,23 @@ body{
 .button__main__text{
     margin: 0 10px;
 }
-.todo__main{
-    height: 35px;
+.todo__main i{
+    color: #000; 
+}
+.todo__main ul{
+    list-style-type: none;
+}
+.todo__main__text{
     width: 900px;
+    color: #8b4fe0;  
+    padding: 0 20px;
+    height: 35px;
     background-color: #fff;
     border-radius: 10px;
     margin: 20px auto;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-.todo__main i{
-    color: #000;
-    margin: 0 20px;   
-}
-.todo__main__text{
-    color: #8b4fe0;
-    margin: 0 20px; 
+    align-items: center;
 }
 /*F.MAIN*/
 /*-------------------------------------------*/

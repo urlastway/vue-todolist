@@ -24,18 +24,24 @@
             </div>
         </div>
     </header>
+
+
     <main>
-        <div class="container">
+        <div id="root" class="container">
             <label class="lable__main">
-                <input type="text" class="textbox__main">
-                <button class="button__main"><p class="button__main__text">Aggiungi</p></button>
+                <input type="text" placeholder="Add one todo" class="textbox__main" v-model="addTodo">
+                <button class="button__main" @click="pushTodo()"><p class="button__main__text">Aggiungi</p></button>
             </label>
             <div class="todo__main">
-                <div class="todo__main__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi </div>
-                <i class="fa-solid fa-xmark"></i>
+                <ul>
+                    <li class="todo__main__text" v-for="(todo, index) in todos">{{todos[index]}}
+                    <i class="fa-solid fa-xmark"></i></li>
+                </ul>
             </div>
         </div>
     </main>
+
+
     <footer>
 
     </footer>
