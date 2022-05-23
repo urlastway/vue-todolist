@@ -1,0 +1,99 @@
+
+
+/*-------------------------------------------*/
+/*ST*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #8b4fe0;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.container{
+    margin: auto;
+    width: 1200px;
+    margin-bottom: 200px;
+}
+/*ST*/
+/*-------------------------------------------*/
+
+
+/*-------------------------------------------*/
+/*HEADER*/
+
+.header{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left__header{
+    margin-right: 30px;
+}
+.top__text__header{
+    font-size: 50px;
+    font-weight: 500;
+}
+.bootom__text__header{
+    font-size: 60px;
+    font-weight: 700;
+    color: #fd0069;
+    border-style: solid 3px
+}
+
+.img__header{
+    width: 120px;
+}
+/*F.HEADER*/
+/*-------------------------------------------*/
+
+/*-------------------------------------------*/
+/*MAIN*/
+.lable__main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textbox__main{
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+    border-style: none;
+    margin-right: 10px;
+
+}
+.button__main{
+    height: 30px;
+    width: auto;
+    margin-left: 10px;
+    border-radius: 10px;
+    border-style: none;
+}
+.button__main__text{
+    margin: 0 10px;
+}
+.todo__main{
+    height: 35px;
+    width: 900px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.todo__main i{
+    color: #000;
+    margin: 0 20px;   
+}
+.todo__main__text{
+    color: #8b4fe0;
+    margin: 0 20px; 
+}
+/*F.MAIN*/
+/*-------------------------------------------*/
