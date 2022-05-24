@@ -35,9 +35,9 @@
             <h2 class="list__thinks">To Do:</h2>
             <div class="todo__main">
                 <ul>
-                    <li class="todo__main__text" v-for="(todo, index) in todos" :class ="{done: todo.done}">{{todo.text}}
+                    <li class="todo__main__text" v-for="(todo, index) in todos" :class ="{done: todo.done}" >{{todo.text}}
                         <div class="style__icons">
-                            <i class="fa-solid fa-check" @click="addFiniscedToDo(index)"></i>
+                            <i class="fa-solid fa-check" @click="todo.done = !todo.done"></i>
                             <i class="fa-solid fa-xmark" @click="remove(index)" ></i>
                         </div>
                     </li>

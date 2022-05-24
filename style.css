@@ -116,6 +116,7 @@ body{
 }
 .done{
     color: #fd0069;
+    text-decoration: line-through;
 }
 /*F.MAIN*/
 /*-------------------------------------------*/
