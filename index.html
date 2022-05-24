@@ -32,10 +32,15 @@
                 <input type="text" placeholder="Add one todo" class="textbox__main" v-model="addTodo">
                 <button class="button__main" @click="pushTodo()"><p class="button__main__text">Aggiungi</p></button>
             </label>
+            <h2 class="list__thinks">To Do:</h2>
             <div class="todo__main">
                 <ul>
-                    <li class="todo__main__text" v-for="(todo, index) in todos">{{todos[index]}}
-                    <i class="fa-solid fa-xmark" @click="remove(index)"></i></li>
+                    <li class="todo__main__text" v-for="(todo, index) in todos" :class ="{done: todo.done}">{{todo.text}}
+                        <div class="style__icons">
+                            <i class="fa-solid fa-check" @click="addFiniscedToDo(index)"></i>
+                            <i class="fa-solid fa-xmark" @click="remove(index)" ></i>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>

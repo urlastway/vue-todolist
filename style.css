@@ -54,17 +54,22 @@ body{
 
 /*-------------------------------------------*/
 /*MAIN*/
+.list__thinks{
+    margin: 20px 0;
+}
 .lable__main{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .textbox__main{
     height: 30px;
     width: 300px;
     border-radius: 10px;
     border-style: none;
     margin-right: 10px;
+    padding: 20px;
 
 }
 .button__main{
@@ -74,17 +79,31 @@ body{
     border-radius: 10px;
     border-style: none;
 }
+.button__main:hover{
+    background-color: #fd0069;
+}
 .button__main__text{
     margin: 0 10px;
 }
 .todo__main i{
     color: #000; 
 }
+.todo__main ul li:hover{
+    background-color: beige;
+    transition: .5s;
+}
+
 .todo__main ul{
     list-style-type: none;
 }
+.style__icons{
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
 .todo__main__text{
-    width: 900px;
+    width: 1000px;
     color: #8b4fe0;  
     padding: 0 20px;
     height: 35px;
@@ -94,6 +113,9 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.done{
+    color: #fd0069;
 }
 /*F.MAIN*/
 /*-------------------------------------------*/
